@@ -110,7 +110,9 @@ ol, ul {
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
-	pointer-events: none;
+    pointer-events: none;
+    overflow-x: scroll;
+    padding: 5%;
 }
 
 .cvPopUp:target {
@@ -118,11 +120,11 @@ ol, ul {
 	pointer-events: auto;
 }
 
-.cvPopUp > div{
-	position: relative;
+.cvWrapper {
     margin: 5% 5%;
-    height: 80%;
-	background: rgba(255, 255, 255, 0.829);
+    display: inline-block;
+    position: relative;
+
 }
 .openCV {
     font-weight: 600;
@@ -142,16 +144,14 @@ ol, ul {
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
 	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
+
 }
 
 .close:hover { background: #00d9ff; }
 
-.pdfViewer {
-    width: 100%;
-    height: 100%;
+.cvViewer {
+    max-width: 100%;
+    background: rgba(255, 255, 255, 1);
 }
 
 nav.nav-contact { 
